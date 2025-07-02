@@ -7,3 +7,18 @@ that even though the composite build `shared` with the modules B and C successfu
 command it reconfigures B and C again even though nothing changed and no parameters changed to invalidate their configuration.
 Optimally the composite build would not invalidate the configuration of B and C. I don't know if composite builds can
 be handled differently than normal builds in this regard.
+
+You will see the following printouts when the configurations are called
+
+```
+...
+> Configure project :shared:B
+Configuring :B project...
+
+> Configure project :shared:C
+Configuring :C project...
+
+> Configure project :A
+Configuring :A project...
+...
+```
