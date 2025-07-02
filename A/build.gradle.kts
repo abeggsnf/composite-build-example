@@ -4,7 +4,7 @@
  * This project uses @Incubating APIs which are subject to change.
  */
 
-println("Configuring app project...")
+println("Configuring ${project.path} project...")
 
 plugins {
     id("buildlogic.kotlin-application-conventions")
